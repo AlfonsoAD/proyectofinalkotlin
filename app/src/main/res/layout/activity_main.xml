@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#dde3e7"
+    android:background="#DF3125"
     tools:context=".MainActivity">
 
     <androidx.cardview.widget.CardView
@@ -21,8 +21,8 @@
             android:id="@+id/bgProfileImageView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:scaleType="centerCrop"
             android:contentDescription="@string/all"
+            android:scaleType="centerCrop"
             app:srcCompat="@drawable/ic_profile" />
     </androidx.cardview.widget.CardView>
 
@@ -59,9 +59,9 @@
                 android:id="@+id/signOutImageView"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
+                android:layout_gravity="end"
                 android:layout_marginTop="12dp"
                 android:layout_marginEnd="12dp"
-                android:layout_gravity="end"
                 android:contentDescription="@string/all"
                 app:srcCompat="@drawable/ic_sign_out"
                 tools:ignore="VectorDrawableCompat" />
@@ -110,20 +110,21 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="16dp"
         android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="20dp"
         app:cardCornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView" >
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+
             <EditText
                 android:id="@+id/nameEditText"
                 android:layout_width="match_parent"
@@ -145,19 +146,19 @@
                 android:id="@+id/updateProfileAppCompatButton"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
+                android:layout_gravity="center"
                 android:layout_marginTop="32dp"
                 android:background="@drawable/ic_buttom"
                 android:paddingLeft="64dp"
                 android:paddingRight="64dp"
-                android:layout_gravity="center"
                 android:text="@string/update_profile"
                 android:textColor="@color/white" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="20dp"
                 android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginBottom="16dp"
                 android:orientation="horizontal">
@@ -167,7 +168,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
-                    android:text="@string/change_password" />
+                    android:fontFamily="sans-serif-black"
+                    android:text="@string/change_password"
+                    android:textSize="16sp" />
 
                 <Space
                     android:layout_width="0dp"
@@ -179,7 +182,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
-                    android:text="@string/delete_account" />
+                    android:fontFamily="sans-serif-black"
+                    android:text="@string/delete_account"
+                    android:textSize="16sp" />
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>

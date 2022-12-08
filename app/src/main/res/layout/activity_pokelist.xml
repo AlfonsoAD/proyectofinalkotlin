@@ -4,19 +4,39 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#DF3125"
     tools:context=".ui.pokelist.PokeListActivity">
-
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/pokelistRecyclerView"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="8dp"
+        android:layout_height="740dp"
+        android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.555"
         tools:itemCount="5"
         tools:listitem="@layout/card_pokemon_search" />
+
+    <Button
+        android:id="@+id/btnProfile"
+        android:layout_width="40dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#FFC107"
+        android:backgroundTint="#FFC107"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:drawablePadding="3dp"
+        android:fontFamily="sans-serif-condensed"
+        android:lineSpacingExtra="20sp"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:typeface="sans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

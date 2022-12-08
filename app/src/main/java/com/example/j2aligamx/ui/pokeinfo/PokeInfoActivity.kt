@@ -4,7 +4,6 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.example.j2aligamx.ui.pokeinfo.PokeInfoViewModel
 import com.example.j2aligamx.R
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.activity_pokeinfo.*

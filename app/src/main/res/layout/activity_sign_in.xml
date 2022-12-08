@@ -4,36 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#DF3125"
     tools:context=".SignInActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="60dp"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="UseCompoundDrawables">
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
             android:contentDescription="@string/all"
-            app:srcCompat="@drawable/logoj2ax48"
+            app:srcCompat="@drawable/esfera_de_pokemon_png_adobe_express__1_"
             tools:ignore="VectorDrawableCompat" />
 
         <TextView
             android:id="@+id/textView5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
             android:gravity="center"
-            android:text="@string/title_active_login"
-            android:textColor="@color/black"
-            android:textSize="24sp" />
+            android:lineSpacingExtra="8sp"
+            android:text="Pokemon App"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#FFC107"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
     </LinearLayout>
 
     <LinearLayout
@@ -82,12 +90,12 @@
             android:id="@+id/recoveryAccountTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="32dp"
-            android:layout_marginStart="24dp"
-            android:textSize="16sp"
+            android:gravity="end"
             android:text="@string/forget_password"
-            android:gravity="end" />
+            android:textSize="16sp" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/signInAppCompatButton"
@@ -127,9 +135,11 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_weight="0"
+            android:fontFamily="sans-serif-black"
             android:text="@string/link_signup"
-            android:textColor="#ff9900"
-            android:textSize="24sp" />
+            android:textColor="#2D47D5"
+            android:textSize="24sp"
+            android:typeface="sans" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
