@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import com.example.j2aligamx.databinding.ActivitySignInBinding
+import com.example.j2aligamx.ui.pokelist.PokeListActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -78,7 +79,7 @@ class SignInActivity : AppCompatActivity() {
     }
 
     private fun reload() {
-        val intent = Intent(this, j2aligamx::class.java)
+        val intent = Intent(this, PokeListActivity::class.java)
         this.startActivity(intent)
     }
 }
